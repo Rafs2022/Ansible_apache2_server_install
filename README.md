@@ -30,3 +30,11 @@ $ ansible all -m ping
 Step 4:
 
 Created 2 playbooks to Install and Remove apache packages on the Ubuntu Server.
+
+Step 5:
+Now lets get the CentOS VM up and running! The 'when' command will help to clean up the automation code. Specifically allowing for agnostic Linux distro automation.
+
+- adding the
+  when: ansible_distribution in ["CentOS"]
+
+Step 6:
