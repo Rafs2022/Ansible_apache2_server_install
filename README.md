@@ -5,6 +5,8 @@ This is my Practice Ansible Automation Repo!
 I am using a CentOS7 VM and an UBUNTU server VM
 for all automated Ansible configurations.
 
+The purpose of this repo is to automate the Apache server installation on 2 Linux distros.
+
 Step 1:
 
 Setup basic inventory file.
