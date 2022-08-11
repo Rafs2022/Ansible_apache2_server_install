@@ -1,0 +1,29 @@
+---
+
+- hosts: ubuntu
+  become: true
+  tasks:
+
+  - name: Remove apache2 package for Ubuntu.
+    apt:
+      name: apache2
+      state: absent
+
+  - name: Remove php support for apache package for Ubuntu.
+    apt:
+      name: libapache2-mod-php
+      state: absent
+
+- hosts: centos
+  become: true
+  tasks:
+
+  - name: Remove apache2 package for CentOS.
+    yum:
+      name: httpd
+      state: absent
+
+  - name: Remove php support for apache package on CentOS.
+    yum:
+      name: php
+      state: absent
